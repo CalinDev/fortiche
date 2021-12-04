@@ -130,9 +130,12 @@ ul {
     position: relative;
     display: inline;
 }
-
+.discover-link {
+    white-space: nowrap;
+}
 .discover-link img {
     position: relative;
+    
     width: 1.1rem !important;
     height: 1.05rem;
     top: 3.5px;
@@ -294,6 +297,7 @@ ul {
 .bottom {
     width: 100%;
     align-self:flex-end;
+    
 }
 .italicized {
     font-style: italic;
@@ -362,8 +366,8 @@ ul {
 
 
 .picture-text {
-    width: 30%;
-    height: 12%;
+    min-width: 30;
+    min-height: 12%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -373,8 +377,8 @@ ul {
     z-index: 50;
     font-size: 30px;
     padding:2.25%  3% 1.75% 2%;
-    bottom: 10%; 
-    left: 5%;
+    bottom: 9%; 
+    left: 4.5%;
     transition: transform .2s;
 }
 .play {
@@ -402,6 +406,7 @@ ul {
    width: 20px !important;
    position: relative;
    margin-top: 5%;
+   margin-left: 5px;
    height:19px;
    bottom: 5px;
 }
@@ -576,6 +581,7 @@ margin-bottom: 0rem;
         visibility: hidden;
         
     }
+   
 }
 
 @media (max-width: 1000px) {
@@ -614,6 +620,10 @@ margin-bottom: 0rem;
     .navbar__item:not(.put-right) {
         display: none;
     }
+    .bottom {
+        align-self:auto;
+    }
+
     .jobs {
         width: 95.5%;
     }
